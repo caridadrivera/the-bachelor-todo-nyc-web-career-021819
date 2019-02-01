@@ -14,6 +14,7 @@ def get_contestant_name(data, occupation)
     if value["occupation"] == occupation
        value["name"]
       end
+    end
   end
 end
 

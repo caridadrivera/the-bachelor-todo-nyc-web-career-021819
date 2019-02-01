@@ -38,6 +38,4 @@ counter = 0
 end
 
 
-def get_average_age_for_season(data, season)
-  # code here
-end
+

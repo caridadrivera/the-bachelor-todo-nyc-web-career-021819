@@ -18,16 +18,16 @@ def get_contestant_name(data, occupation)
 end
 
 def count_contestants_by_hometown(data, hometown)
-  sameHometown = nil
+#   sameHometown = nil
   
-  data["season"].each do |value|
-    if value["hometown"] == hometown
-      counter = 0
-         while counter < 
+#   data["season"].each do |value|
+#     if value["hometown"] == hometown
+#       counter = 0
+#         while counter < 
         
-        counter += 1
-   end
- end
+#         counter += 1
+#   end
+# end
 end
 
 

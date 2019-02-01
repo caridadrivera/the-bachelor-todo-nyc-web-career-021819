@@ -15,8 +15,7 @@ def get_contestant_name(data, occupation)
   #I iterate over the first layer then enter the second layer
   
   data.each do |season, person|
-    
-  #I then iterate over the second layer
+#I then iterate over the second layer
     person.each do |person|
     if person["occupation"] == occupation
         return person["name"]

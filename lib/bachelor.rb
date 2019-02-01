@@ -13,7 +13,7 @@ def get_contestant_name(data, occupation)
   #returns the name of the woman who has that occupation.
   data[person].each do |person|
     if person["occupation"] == occupation
-      
+      return contestant["name"]
     end
   end
 end

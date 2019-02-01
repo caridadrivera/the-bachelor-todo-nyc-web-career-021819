@@ -11,8 +11,11 @@ end
 
 def get_contestant_name(data, occupation)
   #returns the name of the woman who has that occupation.
-  data.each do |season, person|
-    person.each do |contestant|
+  data[person].each do |person|
+    if person["occupation"] == occupation
+      
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)

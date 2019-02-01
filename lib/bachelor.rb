@@ -38,4 +38,24 @@ counter = 0
 end
 
 
+def get_occupation(data, hometown)
+  data.each do |season, person|
+    person.each do |person|
+      if person["hometown"] == hometown
+        return person["occupation"]
+      end
+    end
+  end
+end
 
+
+def get_average_age_for_season(data, season)
+  age_total = 0
+  num_contestants = 0
+  
+  data[season].each do |person|
+    age_total += person["age"].to_f
+    num_contestants += 1
+  end
+  (age_total / num_contestants).round(0)
+end

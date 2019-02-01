@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   #the hash is called data and we know that the seasons are in the first layer of the data hash and we want to access those seasons to iterate over them.
   
   data[season].each do |value|  
-    if value[status] == "Winner"
+    if value["status"] == "Winner"
       value[name].first
     end
   end

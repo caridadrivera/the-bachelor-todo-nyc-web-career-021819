@@ -1,6 +1,17 @@
 def get_first_name_of_season_winner(data, season)
-  # code here
+  
+  firstName = ''
+  
+  data.each do |season, value|
+    season.each do |attribute, values|
+       if attribute["status"] == "Winner"
+        return attribute["name"].split.first
+          
+       end
+    end
+  end
 end
+
 
 def get_contestant_name(data, occupation)
   # code here
